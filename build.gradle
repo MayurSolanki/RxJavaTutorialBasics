@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.2'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
