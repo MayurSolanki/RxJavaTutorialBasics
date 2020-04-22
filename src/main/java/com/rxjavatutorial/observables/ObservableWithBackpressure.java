@@ -20,8 +20,8 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
  */
 public class ObservableWithBackpressure {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ObservableWithoutBackpressure.class);
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(ObservableWithBackpressure.class);
+     // Subscriber is able to handle the data as same rate as observable emits the data
 
     public static void main(String... args) {
 
@@ -62,7 +62,7 @@ public class ObservableWithBackpressure {
 
         });
 
-        RxUtils.sleep(10000);
+        RxUtils.sleep(1000000);
 
     }
 }

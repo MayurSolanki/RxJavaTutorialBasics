@@ -1,0 +1,34 @@
+
+http://reactivex.io/documentation/operators.html
+
+
+ // Four Types of Observable using From
+
+ // convert various other objects and data types into Observables
+    // 1. fromIterable
+    // 2. fromArray
+    // 3. fromCallable
+    // 4.fromPublisher
+
+
+# Types of operators
+   1. Transforming Operator
+      1.1 Buffer   =>  periodically gather items from an Observable into bundles and emit these bundles rather than emitting the items one at a time
+      1.1 Flatmap  =>  Transmit the item, After applying function to modify it BUT it returns observale, Doesn't maintain order
+      1.1 GroupBy  =>  Make group based on criteria
+      1.1 map      =>  Transmit the item, After applying function to modify it
+      1.1 Scan     =>
+      1.1 window   =>
+
+   2. Filtering Operator
+
+   3. Combining Operator
+
+   4. Utility Operator
+
+   5. Conditional Operator
+
+   6. Connectable Operator
+
+
+//

@@ -8,9 +8,10 @@ public class Shape {
     String color;
     String shape;
 
-    public Shape(String color, String shape) {
-        this.color = color;
+    public Shape(String shape,String color ) {
         this.shape = shape;
+        this.color = color;
+
     }
 
     public String getColor() {
