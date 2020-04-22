@@ -11,7 +11,7 @@ http://reactivex.io/documentation/operators.html
     // 4.fromPublisher
 
 
-# Types of operators
+# Types of  operators
    1. Transforming Operator
       1.1 Buffer   =>  periodically gather items from an Observable into bundles and emit these bundles rather than emitting the items one at a time
       1.1 Flatmap  =>  Transmit the item, After applying function to modify it BUT it returns observale, Doesn't maintain order
@@ -21,6 +21,19 @@ http://reactivex.io/documentation/operators.html
       1.1 window   =>
 
    2. Filtering Operator
+      2.1 Debounce  => Only emit an Item from Obswrvale Only After certain amount has been passed
+      2.2 Distinct  =>  Remove duplicates, Only Unique
+      2.3 ElementAt  => Element At Index
+      2.4 Filter    =>  Filter emitted stream based on some condition
+      2.5 First
+      2.6 Ignore Element  => Ignore element
+      2.7 Last
+      2.8 Sample
+      2.9 Skip      => Ignore n elements from stream, Skip(6) -> skip first SIX elements
+      2.10 SkipLast
+      2.11 Take     => Take only n elements from stream
+      2.12 TakeLast
+
 
    3. Combining Operator
 
@@ -31,4 +44,4 @@ http://reactivex.io/documentation/operators.html
    6. Connectable Operator
 
 
-//
+
