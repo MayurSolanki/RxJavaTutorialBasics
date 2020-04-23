@@ -1,8 +1,10 @@
 package com.rxjavatutorial.observables;
 
 import com.rxjavatutorial.observers.DemoObserver;
+import com.rxjavatutorial.utils.RxUtils;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
 
 import io.reactivex.rxjava3.core.Observable;
 
@@ -15,11 +17,17 @@ public class ObservableUsingRepeat {
     // 1. fromIterable
     // 2. fromArray
     // 3. fromCallable
-    // 4.fromPublisher
+    // 4. fromPublisher
+
 
     public static void main(String... args) {
 
+        Observable<Integer> observable =  Observable.fromIterable(RxUtils.postiveNumbers(10));
 
+        observable.repeat(3).subscribe(new DemoObserver());
+
+
+        RxUtils.sleep(20000);
 
     }
 }

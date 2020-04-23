@@ -21,7 +21,7 @@ http://reactivex.io/documentation/operators.html
       1.1 window   =>
 
    2. Filtering Operator
-      2.1 Debounce  => Only emit an Item from Obswrvale Only After certain amount has been passed
+      2.1 Debounce  => Only emit an Item from Observale Only After certain amount has been passed
       2.2 Distinct  =>  Remove duplicates, Only Unique
       2.3 ElementAt  => Element At Index
       2.4 Filter    =>  Filter emitted stream based on some condition
@@ -36,10 +36,25 @@ http://reactivex.io/documentation/operators.html
 
 
    3. Combining Operator
+      3.1 Combine Latest  =>  Combine the result of Two operator, combine the latest item emitted by each Observable, then result of the function emited
+      3.2 Merge           =>  Merge stream from Multiple Observable, If Error from one of the stream then it will publsih error, Will maintain Order
+      3.3 Zip             =>  Zip two observable events or emitted data
+      3.4
 
-   4. Utility Operator
+   4. Observable Utility Operator
+      4.1  Delay    => Observer subscribe immediately but receive data after delay time while in debounce Observable emits after defined amount of Time
+      4.2  Do
+      4.3  TimeStamp  => Attach Timestamp to each emitted Item
+      4.4  TimeOut   => Time Out for Observable, If some items not emitted in particular time then ..
 
-   5. Conditional Operator
+   5. Conditional/Boolean Operator
+      5.1  All   => check all value/events based on condition
+      5.2  Contains  => Check particular value on Observable
+      5.3  Skip Until  => Skip X observable Until Y observable starts emit data
+      5.4  Take Until  =>
+
+
+
 
    6. Connectable Operator
 
